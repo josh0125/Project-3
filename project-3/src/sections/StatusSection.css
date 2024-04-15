@@ -1,0 +1,8 @@
+.results-section {
+    flex: 0 0 20%;
+    padding: 15px;
+}
+
+.results-section h2 {
+    text-align: center;
+}

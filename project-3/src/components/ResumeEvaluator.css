@@ -1,0 +1,10 @@
+.pdf-container {
+    flex: 0 1 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    .pdf-container {
+        width: auto;
+        overflow-x: auto;
+    }
+}

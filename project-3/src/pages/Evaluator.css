@@ -1,0 +1,60 @@
+.resume-container {
+    /* max-width: 1000px; */
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.resume-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-container {
+    display: flex;
+    max-height: 1000px;
+}
+
+.pdf-section {
+    flex: 2 0 60%;
+    display: flex column;
+    padding: 15px;
+}
+
+.approved-container {
+    width: 200px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .resume-container {
+        margin: 0 auto;
+    }
+    .content-container {
+        flex-direction: column-reverse;
+        max-height: none;
+    }
+
+    .checkbox-container {
+        width: auto;
+    }
+
+    .pdf-section {
+        margin-right: 0;
+    }
+
+    .react-pdf__Document {
+        width: 100vw;
+        overflow-y: hidden;
+    }
+
+    .react-pdf__Page__canvas {
+        width: 100vw;
+    }
+
+    .react-pdf__Page {
+        width: 100vw;
+    }
+}

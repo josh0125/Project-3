@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --pink: #f0d8d8;
+    --off-pink: #d9c1ba;
+    --blue: #304860;
+    --light-gray: #a8a8a8;
+    --dark-gray: #666666;
+    --white: #fff;
+    --header-height: 3.5rem;
+    --body-font: "Montserrat", sans-serif;
+    --second-font: "Dancing Script", cursive;
+    --h2-font-size: 1.25rem;
+    --small-font-size: 0.813rem;
+    --font-semi-bold: 600;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--blue);
+    font-family: var(--body-font);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* * {
+    overflow-x: hidden;
+} */

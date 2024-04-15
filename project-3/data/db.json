@@ -1,0 +1,61 @@
+{
+  "waitlist": [
+    {
+      "id": "5sb0",
+      "name": "John Doe",
+      "email": "test@gmail.com",
+      "phone": "123-456-7890",
+      "position": "Recruiter",
+      "company": "Google"
+    }
+  ],
+  "applicants": [
+    {
+      "name": "Joshua Allen",
+      "email": "joshuatallen99@gmail.com",
+      "resume": "/resume.pdf",
+      "status": "Pending",
+      "id": "1"
+    },
+    {
+      "name": "Jared Gastelum",
+      "email": "jared@test.com",
+      "resume": "/resume2.pdf",
+      "status": "Pending",
+      "id": "2"
+    },
+    {
+      "name": "Bobby Joe",
+      "email": "bobby@test.com",
+      "resume": "/resume3.pdf",
+      "status": "Pending",
+      "id": "3"
+    }
+  ],
+  "checks": [
+    {
+      "name": "GPA",
+      "id": "1"
+    },
+    {
+      "name": "SAT",
+      "id": "2"
+    },
+    {
+      "name": "University",
+      "id": "3"
+    },
+    {
+      "name": "Python",
+      "id": "4"
+    },
+    {
+      "id": "9e0d",
+      "name": "JavaScript"
+    },
+    {
+      "id": "4686",
+      "name": "Developer"
+    }
+  ]
+}

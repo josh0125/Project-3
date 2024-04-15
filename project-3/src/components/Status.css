@@ -1,0 +1,25 @@
+.status-sections {
+    display: flex column;
+    width: 100%;
+    margin: 10px;
+    border: 1px solid #000;
+}
+
+.status-sections h3 {
+    margin: 15px;
+    text-align: center;
+}
+
+.status-list {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    display: flex column;
+    margin-bottom: 15px;
+}
+
+.status-list li {
+    flex: 0 1 20%;
+    padding-left: 10px;
+}

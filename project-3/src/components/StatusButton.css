@@ -1,0 +1,23 @@
+.reject-button,
+.accept-button,
+.reset-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reject-button {
+    background-color: #ff6b6b; /* Red color */
+    color: #fff; /* White text */
+}
+
+.accept-button {
+    background-color: #6abf69; /* Green color */
+    color: #fff; /* White text */
+}
+
+.reset-button {
+    background-color: black; /* Green color */
+    color: #fff; /* White text */
+}
