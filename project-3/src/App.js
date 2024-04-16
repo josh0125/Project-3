@@ -20,7 +20,7 @@
 
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
-import Navigation from "./components/Navigation.js";
+import Navigation from "./Navigation.js";
 import Navbar from "./components/Navbar.js";
 
 function App() {

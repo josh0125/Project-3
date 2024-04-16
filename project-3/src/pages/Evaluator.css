@@ -6,6 +6,12 @@
     text-align: center;
 }
 
+.resume-container h1 {
+    font-size: 3rem;
+    color: var(--blue);
+    margin-bottom: 50px;
+}
+
 .resume-heading {
     font-size: 2rem;
     color: #333;

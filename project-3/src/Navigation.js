@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 // import "./Navigation.css";
 import * as React from "react";
-import SignUp from "./../pages/Signup.js";
-import About from "../pages/About";
-import Home from "../pages/Home";
-import Evaluator from "../pages/Evaluator";
+import SignUp from "./pages/Signup.js";
+import About from "./pages/About.js";
+import Home from "./pages/Home.js";
+import Evaluator from "./pages/Evaluator.js";
 
 function Navigation() {
     return (

@@ -7,6 +7,14 @@
 }
 
 :root {
+    --h-yellow: #fbf0c2;
+    --h-pink: #ffd6e4;
+    --h-blue: #acf2eb;
+    --h-orange: #fdcfb7;
+    --h-red: #ee787f;
+    --h-green: #c0ffc8;
+    --black: #36454f;
+
     --pink: #f0d8d8;
     --off-pink: #d9c1ba;
     --blue: #304860;
@@ -25,7 +33,7 @@
 
 body {
     background-color: var(--white);
-    color: var(--blue);
+    color: var(--black);
     font-family: var(--body-font);
 }
 
@@ -37,6 +45,15 @@ a {
     text-decoration: none;
 }
 
-/* * {
-    overflow-x: hidden;
-} */
+mark {
+    background-color: var(--h-green);
+}
+
+.highlight {
+    background-image: linear-gradient(
+        -100deg,
+        rgba(255, 255, 255, 0),
+        var(--h-green) 85%,
+        rgba(255, 255, 255, 0)
+    );
+}

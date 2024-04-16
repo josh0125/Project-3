@@ -15,11 +15,11 @@ header {
     justify-content: space-between;
     position: relative;
     height: var(--header-height);
-    margin: 1rem;
+    margin: 0 1rem;
 }
 
 .nav__logo {
-    color: var(--blue);
+    color: var(--black);
     transition: color 0.4s;
     font-size: var(--h2-font-size);
     font-family: var(--second-font);
@@ -28,13 +28,13 @@ header {
 .nav__toggle,
 .nav__close {
     font-size: 1.5rem;
-    color: var(--blue);
+    color: var(--black);
     cursor: pointer;
 }
 
 .nav__cta {
-    background-color: var(--off-pink);
-    color: var(--blue);
+    background-color: var(--h-pink);
+    color: var(--black);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -47,13 +47,17 @@ header {
         position: fixed;
         top: 0;
         right: -100%;
-        background-color: var(--light-gray);
+        background-color: var(--h-pink);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         width: 80%;
         height: 100%;
         padding: 6rem 3rem 0;
         transition: right 0.4s;
+    }
+
+    .nav__cta {
+        background-color: var(--h-green);
     }
 }
 @media screen and (max-width: 300px) {

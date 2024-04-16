@@ -89,12 +89,12 @@ function Evaluator() {
             name: applicants[resumeIndex].name,
             email: applicants[resumeIndex].email,
             resume: applicants[resumeIndex].resume,
-            status: newStatus === "Reset" ? "Pending" : newStatus,
+            status: newStatus !== "Accept" && newStatus !== "Reject" ? "Pending" : newStatus,
         };
 
         await updateData("http://localhost:8000/applicants/", resumeIndex + 1, newData);
 
-        setStatus(newStatus === "Reset" ? "Pending" : newStatus);
+        setStatus(newStatus !== "Accept" && newStatus !== "Reject" ? "Pending" : newStatus);
     }
 
     function onPreviousResume() {
@@ -111,7 +111,7 @@ function Evaluator() {
 
     return (
         <div className="resume-container">
-            <h2 className="resume-heading">Resume Evaluator</h2>
+            <h1 className="resume-heading">Resume Evaluator</h1>
             <div className="content-container">
                 {isPending ? (
                     <div>Loading...</div>

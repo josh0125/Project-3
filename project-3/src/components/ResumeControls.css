@@ -16,10 +16,6 @@
     gap: 15px;
 }
 
-.status-buttons button {
-    flex: 0 1 33%;
-}
-
 .status-bar {
     display: flex;
     justify-content: center;
@@ -44,7 +40,8 @@
 .previous-resume-button {
     margin: 10px;
     padding: 10px 20px;
-    color: var(--light-gray);
+    color: var(--h-yellow);
+    background-color: var(--h-blue);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -53,12 +50,13 @@
 
 .next-resume-button:hover,
 .previous-resume-button:hover {
-    background-color: var(--blue);
+    background-color: var(--h-green);
 }
 
 @media only screen and (max-width: 600px) {
     .status-buttons {
         margin: 10px;
+        width: 100%;
     }
 
     .status-bar span {

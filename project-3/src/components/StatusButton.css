@@ -8,16 +8,19 @@
 }
 
 .reject-button {
-    background-color: #ff6b6b; /* Red color */
-    color: #fff; /* White text */
+    background: var(--h-red);
+    color: var(--white);
+    flex: 0 1 45%;
 }
 
 .accept-button {
-    background-color: #6abf69; /* Green color */
-    color: #fff; /* White text */
+    background: var(--h-green);
+    color: var(--black);
+    flex: 0 1 45%;
 }
 
 .reset-button {
-    background-color: black; /* Green color */
-    color: #fff; /* White text */
+    background: transparent;
+    color: var(--black);
+    flex: 0 1 10%;
 }
