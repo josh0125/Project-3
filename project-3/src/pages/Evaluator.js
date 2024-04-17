@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react";
 import ResumeControls from "./../components/ResumeControls.js";
-import ResumeEvaluater from "../components/ResumeEvaluator.js";
+import ResumeEvaluator from "../components/ResumeEvaluator.js";
 import updateData from "../api/updateData.js";
 import StatusSection from "../sections/StatusSection.js";
 import Constants from "../Constants.js";
@@ -120,22 +120,21 @@ function Evaluator() {
                         <StatusSection data={applicants} />
                         <div className="pdf-section">
                             <ResumeControls
-                                resumeFileLength={applicants.length - 1}
                                 buttons={Constants.buttons}
                                 handleStatusChange={handleStatusChange}
                                 status={status ? status : ""}
+                            />
+                            <ResumeEvaluator
+                                file={applicants[resumeIndex].resume}
+                                textRenderer={textRenderer}
                                 resumeIndex={resumeIndex}
                                 onPreviousResume={onPreviousResume}
                                 onNextResume={onNextResume}
-                            />
-                            <ResumeEvaluater
-                                file={applicants[resumeIndex].resume}
-                                textRenderer={textRenderer}
+                                resumeFileLength={applicants.length - 1}
                             />
                         </div>
                     </>
                 )}
-
                 <CheckboxSection
                     handleNewCheckChange={handleCheckChange}
                     handleCheckboxChange={handleCheckboxChange}

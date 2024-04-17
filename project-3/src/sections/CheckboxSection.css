@@ -1,8 +1,16 @@
 .checkbox-section {
-    flex: 0 0 20%;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    flex: 1 15%;
+    background-color: var(--white);
     padding: 15px;
+    height: 100%;
+}
+
+.checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 10px;
+    margin: 50px;
 }
 
 .add-check-section {
@@ -10,25 +18,45 @@
     display: flex column;
     justify-content: space-between;
     align-self: center;
+
+    padding: 15px;
+}
+
+.add-check-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .add-check-section input {
+    margin-bottom: 10px;
+
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    border: 0.1px solid var(--black);
+    border-radius: 5px;
 }
 
 .add-check-section button {
-    padding: 10px 20px;
+    background-color: var(--h-green);
+    color: var(--black);
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: var(--blue); /* Green color */
-    color: #fff; /* White text */
 }
 
 @media only screen and (max-width: 600px) {
     .checkbox-container {
         width: auto;
+    }
+
+    .checkboxes {
+        margin: 20px;
+    }
+
+    .add-check-section {
+        border-radius: 10px;
+        background: var(--h-blue);
     }
 }

@@ -30,15 +30,17 @@ const CheckboxSection = ({
     return (
         <div className="checkbox-section">
             <h2>Checks</h2>
-            {checks.map((check) => {
-                return (
-                    <Checkbox
-                        value={check.name}
-                        key={check.id}
-                        handleCheckboxChange={handleCheckboxChange}
-                    />
-                );
-            })}
+            <div className="checkboxes">
+                {checks.map((check) => {
+                    return (
+                        <Checkbox
+                            value={check.name}
+                            key={check.id}
+                            handleCheckboxChange={handleCheckboxChange}
+                        />
+                    );
+                })}
+            </div>
 
             <div className="add-check-section">
                 <h3>Add Checks</h3>

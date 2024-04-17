@@ -20,6 +20,8 @@
 
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
+import React from "react";
+import Footer from "./components/Footer.js";
 import Navigation from "./Navigation.js";
 import Navbar from "./components/Navbar.js";
 
@@ -31,6 +33,7 @@ function App() {
                 <main className="main-content">
                     <Navigation />
                 </main>
+                <Footer />
             </Router>
         </>
     );

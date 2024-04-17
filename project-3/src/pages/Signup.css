@@ -1,0 +1,13 @@
+.sign-up-container {
+    display: flex column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.sign-up-container h1 {
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 50px;
+}

@@ -1,10 +1,71 @@
 .pdf-container {
-    flex: 0 1 80%;
+    flex: 2 1 80%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pdf-container span {
+    flex: 0 1 2.5%;
+}
+
+.react-pdf__Document {
+    flex: 1 1 95%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.react-pdf__Page {
+    width: calc(var(--scale-factor) * 612px) !important;
+    height: calc(var(--scale-factor) * 792px) !important;
+    --scale-factor: 1 !important;
+}
+
+.react-pdf__Page__canvas {
+    width: calc(var(--scale-factor) * 612px) !important;
+    height: calc(var(--scale-factor) * 792px) !important;
+}
+
+.next-resume-button,
+.previous-resume-button {
+    padding: 10px 5px;
+    color: var(--black);
+    background-color: var(--h-blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-resume-button:hover,
+.previous-resume-button:hover {
+    background-color: var(--h-yellow);
+}
+
+.arrow {
+    transform: scaleX(-1);
 }
 
 @media only screen and (max-width: 600px) {
     .pdf-container {
         width: auto;
         overflow-x: auto;
+    }
+
+    .react-pdf__Document {
+        --scale-factor: 0.5 !important;
+        width: 100%;
+    }
+
+    .react-pdf__Page {
+        --scale-factor: 0.5 !important;
     }
 }

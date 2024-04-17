@@ -22,3 +22,34 @@
     text-align: left;
     margin-left: 30px;
 }
+
+.hero {
+    position: relative;
+    z-index: 10;
+}
+
+.hero h1 {
+    color: var(--lightbrown);
+    font-size: 2.5em;
+}
+
+.hero p {
+    color: var(--lightbrown);
+    font-size: 1.25rem;
+}
+
+.hero .text-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, transparent 0, rgba(0, 0, 0, 1) 100%);
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}

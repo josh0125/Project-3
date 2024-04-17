@@ -14,14 +14,14 @@
       "name": "Joshua Allen",
       "email": "joshuatallen99@gmail.com",
       "resume": "/resume.pdf",
-      "status": "Pending",
+      "status": "Accept",
       "id": "1"
     },
     {
       "name": "Jared Gastelum",
       "email": "jared@test.com",
       "resume": "/resume2.pdf",
-      "status": "Pending",
+      "status": "Accept",
       "id": "2"
     },
     {
@@ -38,24 +38,16 @@
       "id": "1"
     },
     {
-      "name": "SAT",
+      "name": "University",
       "id": "2"
     },
     {
-      "name": "University",
+      "name": "Python",
       "id": "3"
     },
     {
-      "name": "Python",
+      "name": "SAT",
       "id": "4"
-    },
-    {
-      "id": "9e0d",
-      "name": "JavaScript"
-    },
-    {
-      "id": "4686",
-      "name": "Developer"
     }
   ]
 }

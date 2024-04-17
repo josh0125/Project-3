@@ -12,6 +12,11 @@
     margin-bottom: 50px;
 }
 
+.resume-container h2 {
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
 .resume-heading {
     font-size: 2rem;
     color: #333;
@@ -24,7 +29,7 @@
 }
 
 .pdf-section {
-    flex: 2 0 60%;
+    flex: 70%;
     display: flex column;
     padding: 15px;
 }
@@ -49,18 +54,5 @@
 
     .pdf-section {
         margin-right: 0;
-    }
-
-    .react-pdf__Document {
-        width: 100vw;
-        overflow-y: hidden;
-    }
-
-    .react-pdf__Page__canvas {
-        width: 100vw;
-    }
-
-    .react-pdf__Page {
-        width: 100vw;
     }
 }

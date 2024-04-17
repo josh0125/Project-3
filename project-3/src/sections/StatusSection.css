@@ -1,8 +1,14 @@
 .results-section {
-    flex: 0 0 20%;
+    flex: 1 15%;
     padding: 15px;
 }
 
 .results-section h2 {
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .results-section {
+        margin-bottom: 75px;
+    }
 }

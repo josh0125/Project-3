@@ -5,22 +5,19 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: var(--black);
 }
 
 .reject-button {
     background: var(--h-red);
-    color: var(--white);
     flex: 0 1 45%;
 }
 
 .accept-button {
     background: var(--h-green);
-    color: var(--black);
     flex: 0 1 45%;
 }
 
 .reset-button {
     background: transparent;
-    color: var(--black);
-    flex: 0 1 10%;
 }

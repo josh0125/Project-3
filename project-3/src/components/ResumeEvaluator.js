@@ -14,13 +14,31 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 const maxWidth = 800;
 
-function ResumeEvaluater({ onLoadSuccess, file, numPages, textRenderer }) {
-    function onFileChange(event) {
-        file = event.target;
-    }
-
+function ResumeEvaluator({
+    onLoadSuccess,
+    file,
+    numPages,
+    textRenderer,
+    resumeIndex,
+    onPreviousResume,
+    onNextResume,
+    resumeFileLength,
+}) {
     return (
         <div className="pdf-container">
+            <span>
+                {resumeIndex !== 0 && (
+                    <button className="previous-resume-button" onClick={onPreviousResume}>
+                        <img
+                            src="/right-arrow.svg"
+                            alt="Previous Resume"
+                            width="10"
+                            className="arrow"
+                        />
+                    </button>
+                )}
+            </span>
+
             <Document file={file} onLoadSuccess={onLoadSuccess}>
                 {Array.from(new Array(numPages), (el, index) => (
                     <Page
@@ -31,12 +49,16 @@ function ResumeEvaluater({ onLoadSuccess, file, numPages, textRenderer }) {
                     />
                 ))}
             </Document>
-            {/* <div className="Example__container__load">
-                <label htmlFor="file">Load from file:</label>{" "}
-                <input onChange={onFileChange} type="file" />
-            </div> */}
+
+            <span>
+                {resumeIndex !== resumeFileLength && (
+                    <button className="next-resume-button" onClick={onNextResume}>
+                        <img src="/right-arrow.svg" alt="Previous Resume" width="10" />
+                    </button>
+                )}
+            </span>
         </div>
     );
 }
 
-export default ResumeEvaluater;
+export default ResumeEvaluator;
