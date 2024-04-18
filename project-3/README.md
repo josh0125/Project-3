@@ -16,3 +16,5 @@ I was also able to learn the importance of useState and useEffect throughout the
 Last of all, I was able to learn about some new packages like react-pdf and json-server. Both of these were very helpful throughout the project. Json-server was a simple solution I could use to serve up the data I was using in the project. React-pdf was a bit more confusing, and I would likely not use this in the future, but for an MVP it did the job.
 
 Overall, I enjoyed this project a lot even though the styling was a hassle. I will continue to use react in the future because of this project!
+
+Youtube Link: https://www.youtube.com/watch?v=t-ZuzIPs0_4

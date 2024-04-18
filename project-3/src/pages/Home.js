@@ -21,10 +21,10 @@ const Home = () => {
                     <ul className="home-list">
                         <li>GPA</li>
                         <li>SAT</li>
-                        <li>Skills</li>
-                        <li>Present Job</li>
-                        <li>Education</li>
-                        <li>Custom Search Seaction</li>
+                        <li>University</li>
+                        <li>Skill</li>
+                        <li>Experiences</li>
+                        <li>Custom Search Section</li>
                     </ul>
                     <p className="home-description">
                         Checkout our <NavLink to="/evaluator">BETA</NavLink> right now to see what
