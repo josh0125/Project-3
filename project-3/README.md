@@ -18,3 +18,7 @@ Last of all, I was able to learn about some new packages like react-pdf and json
 Overall, I enjoyed this project a lot even though the styling was a hassle. I will continue to use react in the future because of this project!
 
 Youtube Link: https://www.youtube.com/watch?v=t-ZuzIPs0_4
+
+How to start: to star the json-server navigate to the data folder and run "json-server --watch db.json --port 8000"
+
+Run npm start and you should be good to go!
