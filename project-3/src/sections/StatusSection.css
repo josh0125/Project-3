@@ -1,10 +1,29 @@
 .results-section {
     flex: 1 15%;
-    padding: 15px;
+    margin: 15px;
+    padding-left: 25px;
+    border-left: var(--black) 2px solid;
 }
 
 .results-section h2 {
     text-align: center;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+
+.spacer {
+    padding-bottom: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+    .results-section {
+        border-left: none;
+        border-top: var(--black) 2px solid;
+    }
+
+    .spacer {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {

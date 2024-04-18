@@ -1,11 +1,11 @@
 import React, { useState, useCallback, useEffect } from "react";
+import CheckboxSection from "../sections/CheckboxSection.js";
+import Constants from "../Constants.js";
 import ResumeControls from "./../components/ResumeControls.js";
 import ResumeEvaluator from "../components/ResumeEvaluator.js";
-import updateData from "../api/updateData.js";
 import StatusSection from "../sections/StatusSection.js";
-import Constants from "../Constants.js";
-import CheckboxSection from "../sections/CheckboxSection.js";
 import postData from "../api/postData.js";
+import updateData from "../api/updateData.js";
 import "./Evaluator.css";
 
 function highlightPattern(text, pattern) {
@@ -67,11 +67,11 @@ function Evaluator() {
         });
     }
 
-    const handleCheckChange = (e) => {
+    function handleCheckChange(e) {
         setNewCheck({
             name: e.target.value,
         });
-    };
+    }
 
     function handleCheckboxChange(event) {
         const { value, checked } = event.target;
@@ -110,39 +110,42 @@ function Evaluator() {
     }
 
     return (
-        <div className="resume-container">
-            <h1 className="resume-heading">Resume Evaluator</h1>
-            <div className="content-container">
-                {isPending ? (
-                    <div>Loading...</div>
-                ) : (
-                    <>
-                        <StatusSection data={applicants} />
-                        <div className="pdf-section">
-                            <ResumeControls
-                                buttons={Constants.buttons}
-                                handleStatusChange={handleStatusChange}
-                                status={status ? status : ""}
-                            />
-                            <ResumeEvaluator
-                                file={applicants[resumeIndex].resume}
-                                textRenderer={textRenderer}
-                                resumeIndex={resumeIndex}
-                                onPreviousResume={onPreviousResume}
-                                onNextResume={onNextResume}
-                                resumeFileLength={applicants.length - 1}
-                            />
-                        </div>
-                    </>
-                )}
-                <CheckboxSection
-                    handleNewCheckChange={handleCheckChange}
-                    handleCheckboxChange={handleCheckboxChange}
-                    handleCheckboxAdd={handleCheckboxAdd}
-                    newCheck={newCheck}
-                />
+        <>
+            <div className="resume-container">
+                <aside className="sidebar">
+                    <CheckboxSection
+                        handleNewCheckChange={handleCheckChange}
+                        handleCheckboxChange={handleCheckboxChange}
+                        handleCheckboxAdd={handleCheckboxAdd}
+                        newCheck={newCheck}
+                    />
+                </aside>
+                <div className="content-container">
+                    {isPending ? (
+                        <div>Loading...</div>
+                    ) : (
+                        <>
+                            <div className="pdf-section">
+                                <ResumeControls
+                                    buttons={Constants.buttons}
+                                    handleStatusChange={handleStatusChange}
+                                    status={status ? status : ""}
+                                />
+                                <ResumeEvaluator
+                                    file={applicants[resumeIndex].resume}
+                                    textRenderer={textRenderer}
+                                    resumeIndex={resumeIndex}
+                                    onPreviousResume={onPreviousResume}
+                                    onNextResume={onNextResume}
+                                    resumeFileLength={applicants.length - 1}
+                                />
+                            </div>
+                            <StatusSection data={applicants} />
+                        </>
+                    )}
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 

@@ -29,7 +29,7 @@ const CheckboxSection = ({
 
     return (
         <div className="checkbox-section">
-            <h2>Checks</h2>
+            <h2>CHECKS</h2>
             <div className="checkboxes">
                 {checks.map((check) => {
                     return (
@@ -43,7 +43,7 @@ const CheckboxSection = ({
             </div>
 
             <div className="add-check-section">
-                <h3>Add Checks</h3>
+                <h3>Add Your Own Check</h3>
                 <input
                     type="text"
                     name="newCheck"
@@ -52,7 +52,7 @@ const CheckboxSection = ({
                     required
                 />
                 <button type="button" onClick={handleCheckboxAdd}>
-                    Add Check
+                    ADD
                 </button>
             </div>
         </div>

@@ -4,14 +4,14 @@ import "./Checkbox.css";
 const Checkbox = ({ value, handleCheckboxChange }) => {
     return (
         <div className="checkbox-item box_1">
+            <label htmlFor={value}>{value}</label>
             <input
                 type="checkbox"
-                class="switch_1"
+                className="switch_1"
                 id={value}
                 onChange={handleCheckboxChange}
                 value={value}
             />
-            <label htmlFor={value}>{value}</label>
         </div>
     );
 };

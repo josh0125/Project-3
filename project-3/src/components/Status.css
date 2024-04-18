@@ -1,15 +1,16 @@
 .status-sections {
     display: flex column;
     margin: 10px;
-    background-color: var(--h-yellow);
-    border-radius: 10px;
     padding-bottom: 10px;
-    padding-top: 10px;
+    color: var(--black);
 }
 
 .status-sections h3 {
-    margin: 15px;
+    margin: 5px;
+    margin-top: 0;
+    padding: 5px;
     text-align: center;
+    border-bottom: var(--black) 1px solid;
 }
 
 .status-list {

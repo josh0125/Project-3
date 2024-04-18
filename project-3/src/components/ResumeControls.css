@@ -1,9 +1,9 @@
 .pdf-controls {
-    /* width: 800px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    color: var(--black);
 }
 
 .status-buttons {
@@ -57,11 +57,5 @@
     .status {
         flex: 0 1 70%;
         text-align: center;
-    }
-
-    .next-resume-button,
-    .previous-resume-button {
-        margin: 0;
-        padding: 10px 10px;
     }
 }

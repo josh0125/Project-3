@@ -1,5 +1,5 @@
 .checkbox-item label {
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Got this from a CodePen https://codepen.io/thelaazyguy/pen/MvqpPr */
@@ -10,7 +10,7 @@
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: start;
+    justify-content: end;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -27,7 +27,7 @@ input[type="checkbox"].switch_1 {
     appearance: none;
     width: 3.5em;
     height: 1.5em;
-    background: #ddd;
+    background: var(--light-gray);
     border-radius: 3em;
     position: relative;
     cursor: pointer;
@@ -37,7 +37,7 @@ input[type="checkbox"].switch_1 {
 }
 
 input[type="checkbox"].switch_1:checked {
-    background: var(--h-blue);
+    background: var(--h-yellow);
 }
 
 input[type="checkbox"].switch_1:after {
@@ -46,7 +46,7 @@ input[type="checkbox"].switch_1:after {
     width: 1.5em;
     height: 1.5em;
     border-radius: 50%;
-    background: #fff;
+    background: var(--black);
     -webkit-box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
     -webkit-transform: scale(0.7);

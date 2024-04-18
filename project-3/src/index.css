@@ -29,14 +29,15 @@
     --font-semi-bold: 600;
     --z-tooltip: 10;
     --z-fixed: 100;
+    --scale-factor: viewport.scale;
 }
 
 body {
     font-family: var(--body-font);
-    background-color: var(--white);
-    color: var(--black);
+    color: var(--h-yellow);
     font-family: var(--body-font);
     overflow-x: hidden;
+    background: var(--black);
 }
 
 ul {
@@ -48,7 +49,7 @@ a {
 }
 
 mark {
-    background-color: var(--h-green);
+    background-color: var(--h-yellow);
 }
 
 .highlight {

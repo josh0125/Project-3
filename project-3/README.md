@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+Application Explanation:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For my projct I created a React application that would be used by recruiters from companies that need to review resumes during the hiring process. As I have talked to recruiters, many are opposed to having AI review their candidates and would rather give everyone a chance by looking at each resume.
 
-## Available Scripts
+Therefore, this application will hopefully help speed up that process. The evaluator will highlight certain key words that the recruiter in looking for in the resume. A few standard ones like GPA and SAT are able to be toggled, so those words can be highlighted on the resume. Recruiters also have the ability to add their own checks they can look for. For the MVP, the highlight will only work for those specific words, but in the future we would hope to use OpenAI to better interrupt the resumes.
 
-In the project directory, you can run:
+As recruiters look through the application, they can either reject or accept the resume based on their criteria. In the future, they would have the ability to email applicants either an accepted email or rejected one.
 
-### `npm start`
+The application also currently is taking a waitlist of those interested.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Key Takeaways:
+As I went through this project, I learned a lot about how React works. I have done mini React projects before, but this was a lot bigger of a project. I was able to create a structure for all my differents pages, sections, and components. By breaking these up, the application was able a lot more clear and the components were able to preform their functions and have their own styling.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I was also able to learn the importance of useState and useEffect throughout the application. By having the state variables, I was able to adjust different part of the applications depending on what the user did. Useeffect was also new for me, but it was very important when pulling the data from the "backend".
 
-### `npm test`
+Last of all, I was able to learn about some new packages like react-pdf and json-server. Both of these were very helpful throughout the project. Json-server was a simple solution I could use to serve up the data I was using in the project. React-pdf was a bit more confusing, and I would likely not use this in the future, but for an MVP it did the job.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Overall, I enjoyed this project a lot even though the styling was a hassle. I will continue to use react in the future because of this project!

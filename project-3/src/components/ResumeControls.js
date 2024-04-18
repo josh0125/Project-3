@@ -8,7 +8,7 @@ function ResumeEvaluater({ buttons, handleStatusChange, status }) {
             <div className="status-bar">
                 <div className="status">
                     <h2>
-                        Status:<span>{status}</span>
+                        STATUS:<span>{status}</span>
                     </h2>
                 </div>
             </div>

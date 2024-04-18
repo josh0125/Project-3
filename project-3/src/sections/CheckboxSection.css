@@ -1,8 +1,15 @@
 .checkbox-section {
     flex: 1 15%;
-    background-color: var(--white);
-    padding: 15px;
+    background-color: var(--black);
     height: 100%;
+    border-top: var(--h-yellow) 2px solid;
+    border-right: var(--h-yellow) 2px solid;
+    padding-top: 40px;
+}
+
+.checkbox-section h2 {
+    text-align: center;
+    color: var(--h-yellow);
 }
 
 .checkboxes {
@@ -10,7 +17,7 @@
     flex-wrap: wrap;
     justify-content: start;
     gap: 10px;
-    margin: 50px;
+    margin: 25px;
 }
 
 .add-check-section {
@@ -18,45 +25,48 @@
     display: flex column;
     justify-content: space-between;
     align-self: center;
+    padding: 0px;
+    margin: 15px;
+    border-top: var(--h-yellow) 2px solid;
+}
 
-    padding: 15px;
+.add-check-section h3 {
+    text-align: center;
+    color: var(--h-yellow);
+    margin: 15px;
 }
 
 .add-check-section label {
-    font-weight: bold;
+    font-style: bold;
     display: block;
     margin-bottom: 5px;
 }
 
 .add-check-section input {
     margin-bottom: 10px;
-
     width: 100%;
     padding: 10px;
-    border: 0.1px solid var(--black);
-    border-radius: 5px;
+    border: 0.1px solid var(--h-yellow);
+    background: var(--black);
 }
 
 .add-check-section button {
-    background-color: var(--h-green);
+    background-color: var(--h-yellow);
     color: var(--black);
+    font-weight: var(--font-semi-bold);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
-    .checkbox-container {
+@media only screen and (max-width: 950px) {
+    .checkbox-section {
         width: auto;
+        border-right: none;
     }
 
     .checkboxes {
         margin: 20px;
-    }
-
-    .add-check-section {
-        border-radius: 10px;
-        background: var(--h-blue);
     }
 }

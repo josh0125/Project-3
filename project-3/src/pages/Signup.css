@@ -8,6 +8,7 @@
 
 .sign-up-container h1 {
     font-size: 3rem;
-    color: var(--black);
+    color: (--h-yellow);
     margin-bottom: 50px;
+    font-family: "Arial, Helvetica", serif;
 }

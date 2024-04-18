@@ -3,21 +3,36 @@
 .reset-button {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     color: var(--black);
+    border-radius: 5px;
 }
 
 .reject-button {
-    background: var(--h-red);
+    border: var(--h-red) solid 5px;
+    background: none;
     flex: 0 1 45%;
 }
 
+.reject-button:hover {
+    background: var(--h-red);
+}
+
 .accept-button {
-    background: var(--h-green);
+    border: var(--h-green) solid 5px;
+    background: none;
     flex: 0 1 45%;
+}
+
+.accept-button:hover {
+    background: var(--h-green);
 }
 
 .reset-button {
     background: transparent;
+}
+
+.reset-button:hover {
+    background: var(--h-yellow);
+    border-radius: 5px;
 }

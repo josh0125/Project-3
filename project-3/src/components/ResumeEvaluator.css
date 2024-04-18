@@ -38,7 +38,7 @@
 .previous-resume-button {
     padding: 10px 5px;
     color: var(--black);
-    background-color: var(--h-blue);
+    background-color: var(--white);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -54,18 +54,28 @@
     transform: scaleX(-1);
 }
 
-@media only screen and (max-width: 600px) {
-    .pdf-container {
-        width: auto;
-        overflow-x: auto;
-    }
-
+@media only screen and (max-width: 700px) {
     .react-pdf__Document {
-        --scale-factor: 0.5 !important;
+        --scale-factor: 0.75 !important;
         width: 100%;
     }
 
     .react-pdf__Page {
-        --scale-factor: 0.5 !important;
+        --scale-factor: 0.75 !important;
+    }
+    .pdf-container {
+        width: auto;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .react-pdf__Document {
+        --scale-factor: 0.55 !important;
+        width: 100%;
+    }
+
+    .react-pdf__Page {
+        --scale-factor: 0.55 !important;
     }
 }

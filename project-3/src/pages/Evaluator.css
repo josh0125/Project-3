@@ -1,9 +1,17 @@
 .resume-container {
     /* max-width: 1000px; */
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 20px;
     text-align: center;
+    display: flex;
+}
+
+.resume-heading {
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    color: var(--h-yellow);
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Arial, Helvetica", serif;
+    font-style: italic;
 }
 
 .resume-container h1 {
@@ -14,18 +22,20 @@
 
 .resume-container h2 {
     font-size: 2.5rem;
-    color: var(--blue);
 }
 
-.resume-heading {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
+.resume-container aside {
+    left: 0;
+    flex: 1 0 15%;
 }
 
 .content-container {
     display: flex;
-    max-height: 1000px;
+    flex: 1 80%;
+    background-color: var(--white);
+    padding-right: 25px;
+    padding-top: 20px;
+    margin-left: 25px;
 }
 
 .pdf-section {
@@ -38,14 +48,24 @@
     width: 200px;
     padding: 20px;
 }
+@media only screen and (max-width: 1200px) {
+    .content-container {
+        flex-direction: column;
+    }
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
     .resume-container {
         margin: 0 auto;
+        flex-direction: column;
     }
+
     .content-container {
-        flex-direction: column-reverse;
         max-height: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        padding-top: 20px;
     }
 
     .checkbox-container {

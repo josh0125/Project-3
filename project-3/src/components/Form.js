@@ -45,7 +45,7 @@ const Form = () => {
             ) : (
                 <form onSubmit={handleSubmit}>
                     <div>
-                        <label>Name:</label>
+                        <label>NAME:</label>
                         <input
                             type="text"
                             name="name"
@@ -55,7 +55,7 @@ const Form = () => {
                         />
                     </div>
                     <div>
-                        <label>Email:</label>
+                        <label>EMAIL:</label>
                         <input
                             type="email"
                             name="email"
@@ -65,7 +65,7 @@ const Form = () => {
                         />
                     </div>
                     <div>
-                        <label>Number:</label>
+                        <label>NUMBER:</label>
                         <input
                             type="tel"
                             name="number"
@@ -75,7 +75,7 @@ const Form = () => {
                         />
                     </div>
                     <div>
-                        <label>Position:</label>
+                        <label>POSITION:</label>
                         <input
                             type="text"
                             name="position"
@@ -85,7 +85,7 @@ const Form = () => {
                         />
                     </div>
                     <div>
-                        <label>Company:</label>
+                        <label>COMPANY:</label>
                         <input
                             type="text"
                             name="company"
@@ -94,7 +94,7 @@ const Form = () => {
                             required
                         />
                     </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit">SUBMIT</button>
                 </form>
             )}
         </div>

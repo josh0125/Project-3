@@ -1,53 +1,53 @@
 {
-  "waitlist": [
-    {
-      "id": "5sb0",
-      "name": "John Doe",
-      "email": "test@gmail.com",
-      "phone": "123-456-7890",
-      "position": "Recruiter",
-      "company": "Google"
-    }
-  ],
-  "applicants": [
-    {
-      "name": "Joshua Allen",
-      "email": "joshuatallen99@gmail.com",
-      "resume": "/resume.pdf",
-      "status": "Accept",
-      "id": "1"
-    },
-    {
-      "name": "Jared Gastelum",
-      "email": "jared@test.com",
-      "resume": "/resume2.pdf",
-      "status": "Accept",
-      "id": "2"
-    },
-    {
-      "name": "Bobby Joe",
-      "email": "bobby@test.com",
-      "resume": "/resume3.pdf",
-      "status": "Accept",
-      "id": "3"
-    }
-  ],
-  "checks": [
-    {
-      "name": "GPA",
-      "id": "1"
-    },
-    {
-      "name": "University",
-      "id": "2"
-    },
-    {
-      "name": "Python",
-      "id": "3"
-    },
-    {
-      "name": "SAT",
-      "id": "4"
-    }
-  ]
+    "waitlist": [
+        {
+            "id": "5sb0",
+            "name": "John Doe",
+            "email": "test@gmail.com",
+            "phone": "123-456-7890",
+            "position": "Recruiter",
+            "company": "Google"
+        }
+    ],
+    "applicants": [
+        {
+            "name": "Joshua Allen",
+            "email": "joshuatallen99@gmail.com",
+            "resume": "/resume.pdf",
+            "status": "Pending",
+            "id": "1"
+        },
+        {
+            "name": "Jared Gastelum",
+            "email": "jared@test.com",
+            "resume": "/resume2.pdf",
+            "status": "Pending",
+            "id": "2"
+        },
+        {
+            "name": "Bobby Joe",
+            "email": "bobby@test.com",
+            "resume": "/resume3.pdf",
+            "status": "Pending",
+            "id": "3"
+        }
+    ],
+    "checks": [
+        {
+            "name": "GPA",
+            "id": "1"
+        },
+        {
+            "name": "University",
+            "id": "2"
+        },
+        {
+            "name": "Python",
+            "id": "3"
+        },
+        {
+            "name": "SAT",
+            "id": "4"
+        }
+    ]
 }

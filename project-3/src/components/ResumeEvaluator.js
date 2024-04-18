@@ -3,8 +3,6 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "./ResumeEvaluator.css";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
-import "react-pdf/dist/Page/AnnotationLayer.css";
-import "react-pdf/dist/Page/TextLayer.css";
 
 // This is neeeded to handle the react-pdf
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -32,8 +30,8 @@ function ResumeEvaluator({
                         <img
                             src="/right-arrow.svg"
                             alt="Previous Resume"
-                            width="10"
                             className="arrow"
+                            width="25"
                         />
                     </button>
                 )}
@@ -53,7 +51,7 @@ function ResumeEvaluator({
             <span>
                 {resumeIndex !== resumeFileLength && (
                     <button className="next-resume-button" onClick={onNextResume}>
-                        <img src="/right-arrow.svg" alt="Previous Resume" width="10" />
+                        <img src="/right-arrow.svg" alt="Previous Resume" width="25" />
                     </button>
                 )}
             </span>

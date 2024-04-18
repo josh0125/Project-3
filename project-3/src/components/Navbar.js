@@ -18,46 +18,47 @@ const Navbar = () => {
     return (
         <header className="header">
             <nav className="nav container">
-                <NavLink to="/" className="nav__logo">
+                <NavLink to="/" className="nav-logo">
                     Resume Highlighter
                 </NavLink>
-                <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
-                    <ul className="nav__list">
-                        <li className="nav__item">
-                            <NavLink to="/" className="nav__link" onClick={closeMenuOnMobile}>
+                <div className={`nav-menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
+                    <ul className="nav-list">
+                        <li className="nav-item">
+                            <NavLink to="/" className="nav-link" onClick={closeMenuOnMobile}>
                                 Home
                             </NavLink>
                         </li>
-                        <li className="nav__item">
-                            <NavLink to="/about" className="nav__link" onClick={closeMenuOnMobile}>
+                        {/* <li className="nav-item">
+                            <NavLink to="/about" className="nav-link" onClick={closeMenuOnMobile}>
                                 About
                             </NavLink>
-                        </li>
-                        <li className="nav__item">
+                        </li> */}
+                        <li className="nav-item">
                             <NavLink
                                 to="/evaluator"
-                                className="nav__link"
+                                className="nav-link"
                                 onClick={closeMenuOnMobile}
                             >
-                                Evaluator
+                                Demo
                             </NavLink>
                         </li>
-                        <li className="nav__item">
+                        <li className="nav-item">
                             <NavLink
                                 to="/waitlist"
-                                className="nav__link nav__cta"
+                                className="nav-link nav-cta"
                                 onClick={closeMenuOnMobile}
+                                id="waitlist"
                             >
-                                Sign-Up
+                                Waitlist
                             </NavLink>
                         </li>
                     </ul>
-                    <div className="nav__close" id="nav-close" onClick={toggleMenu}>
+                    <div className="nav-close" id="nav-close" onClick={toggleMenu}>
                         <IoClose />
                     </div>
                 </div>
 
-                <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
+                <div className="nav-toggle" id="nav-toggle" onClick={toggleMenu}>
                     <IoMenu />
                 </div>
             </nav>
